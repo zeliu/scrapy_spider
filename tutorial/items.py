@@ -308,3 +308,13 @@ class JukuuTranslate(scrapy.Item):
     zh = scrapy.Field()
     en = scrapy.Field()
     ru = scrapy.Field()
+
+
+class Baike(scrapy.Item):
+    keyword = scrapy.Field()
+    context = scrapy.Field()
+    linkword = scrapy.Field()
+    tags = scrapy.Field()
+    html = scrapy.Field()
+    ismany = scrapy.Field()
+    url= scrapy.Field()

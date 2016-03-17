@@ -9,6 +9,7 @@
 #
 
 BOT_NAME = 'tutorial'
+LOG_LEVEL = 'INFO'
 
 SPIDER_MODULES = ['tutorial.spiders']
 NEWSPIDER_MODULE = 'tutorial.spiders'
@@ -23,7 +24,6 @@ IMAGES_EXPIRES = 90
 
 #反ban策略一：禁用COOKIES
 COOKIES_ENABLED = False
-
 #取消默认的useragent,使用新的useragent,反ban策略二
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
